@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', Arial, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background: #d4d4ce;
+}
+
+input,
+textarea,
+button {
+  font-family: 'Montserrat', Arial, sans-serif !important;
+}
+
+.container {
+  background: #aeb6a5;
+  padding: 24px;
+  margin: 40px auto;
+  width: 400px;
+  border-radius: 0 0 0 50px;
+  transition: all 0.3s ease;
+    box-shadow: -4px 8px 8px 0 rgba(75, 87, 69, 0.6);
+
+}
+
+input[type="text"],
+input[type="date"] {
+  width: 100%;
+  padding: 12px 20px 12px 20px;
+  /*10px 18px 10px 18px*/
+  border-radius: 50px;
+  border: none;
+  /*2px solid #6b7b62*/
+  outline: none;
+  margin-bottom: 24px;
+  font-size: 16px;
+  box-sizing: border-box;
+  color: #424c3b;
+  background: #d4d4ce;
+  /*8e9b83*/
+  box-shadow: inset 0 6px 8px rgba(75, 87, 69, 0.6);
+
+}
+
+#search {
+  margin-left: -44px;
+  width: 488px;
+  border-radius: 0;
+  padding: 12px 32px;
+  color: #d4d4ce;
+  border: none;
+  background: #6b7b62;
+  margin-bottom: 0;
+  transition: all 0.5s ease;
+  box-shadow: 0 6px 8px 0 rgba(75, 87, 69, 0.6);
+}
+
+input::placeholder {
+  font-size: 16px !important;
+  font-family: 'Montserrat', Arial, sans-serif !important;
+  color: #424c3b !important;
+  opacity: 1 !important;
+}
+
+#search::placeholder {
+  color: #d4d4ce !important;
+}
+
+#search:focus {
+  background: #424c3b;
+}
+
+#taskList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  position: relative;
+}
+
+.task-item {
+  display: flex;
+  font-size: 14px;
+  align-items: center;
+  background: #6b7b62;
+  padding: 4px 4px 4px 20px;
+  gap: 8px;
+  width: 422px;
+  margin-left: -44px;
+  border-radius: 0 50px 50px 0;
+  box-shadow: 0 6px 8px 0 rgba(75, 87, 69, 0.6);
+  transition: all 0.5s ease;
+}
+
+.task-item:has(button:hover) {
+  padding-left: 30px;
+  background: #8e9b83;
+
+}
+
+.task-text,
+.task-date,
+input.edit-text,
+input.edit-date {
+  font-size: 14px;
+  padding: 8px;
+  flex: 1;
+  outline: none;
+  color: #d4d4ce;
+  background: transparent;
+  transition: all 0.5s ease;
+
+}
+
+.task-date {
+  min-height: 16.8px;
+}
+
+input.edit-text,
+input.edit-date {
+  font-family: 'Montserrat', Arial, sans-serif;
+  margin: 0;
+  color: #d4d4ce;
+  background-color: #8e9b83;
+  /*border: 1px solid #d4d4ce;  */
+  border-radius: 20px;
+}
+
+
+input::-webkit-calendar-picker-indicator {
+  filter: invert(0.2) sepia(0.1) hue-rotate(80deg);
+  opacity: 1;
+}
+
+input.edit-date::-webkit-calendar-picker-indicator {
+  filter: invert(0.8) sepia(0.1) hue-rotate(80deg);
+  opacity: 1;
+}
+
+input.edit-text {
+  border-radius: 0 20px 20px 0;
+}
+
+button {
+  font-size: 16px;
+  padding: 22px 8px;
+  border: none;
+  cursor: pointer;
+  background: #424c3b;
+  border-radius: 50px;
+  transition: all 0.5s ease;
+  color: #d4d4ce;
+}
+
+button:hover {
+  color: #d4d4ce;
+  background: #6b7b62;
+}
+
+#addBtn {
+  width: 444px;
+  text-align: right;
+  margin-top: 16px;
+  background: #6b7b62;
+  color: #d4d4ce;
+  border-radius: 50px 0 0 50px;
+  padding: 26px 58px 26px 0px;
+  box-shadow: 0 6px 8px 0 rgba(75, 87, 69, 0.6);
+}
+
+#addBtn:hover {
+  background: #424c3b;
+  color: #d4d4ce;
+}
+
+.highlight {
+  background: #424c3b;
+  color: #d4d4ce;
+  padding: 0 3px;
+}
