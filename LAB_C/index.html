@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Map_Puzzle</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="board">
+    <div class="map-block">
+      <div class="frame">
+        <div id="map"></div>
+      </div>
+      <div class="buttons">
+        <button id="locateBtn">My_location</button>
+        <button id="snapshotBtn">Make_puzzle</button>
+      </div>
+    </div>
+
+    <div class="frame right-column">
+      <div id="reference-container"></div>
+    </div>
+
+    <div class="frame">
+      <div id="snapshot-container"></div>
+    </div>
+
+    <div class="frame right-column">
+      <div id="puzzle"></div>
+    </div>
+  </div>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <!-- Leaflet Image (export do obrazu) -->
+  <script src="https://unpkg.com/leaflet-image/leaflet-image.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
+
+<!-- powershell 
+cd [way to project dir]
+python -m http.server 8000
+ -->
